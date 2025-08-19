@@ -46,19 +46,26 @@ if (searchBox !== null) {
 function searchData(data, searchTerm) {
     const term = searchTerm.toLowerCase();
     if (term.includes('beach')) {
-        return data["beaches"]
+        return data["beaches"];
     }
     if (term.includes('temple')) {
-        return data["temples"]
+        return data["temples"];
     }
     if (term.includes('australia')) {
-        return data["countries"][0]["cities"]
+        return data["countries"][0]["cities"];
     }
     if (term.includes('japan')) {
-        return data["countries"][1]["cities"]
+        return data["countries"][1]["cities"];
     }
     if (term.includes('brazil')) {
-        return data["countries"][2]["cities"]
+        return data["countries"][2]["cities"];
+    }
+    if (term.includes('country') || term.includes('countries')) {
+        let result = [];
+        data["countries"].forEach((country) => {
+            country["cities"].forEach((city) => result.push(city));
+        });
+        return result;
     }
 }
 
