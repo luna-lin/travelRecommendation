@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Explore Dream Destinations</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo"><em>TravelBloom</em></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Enter a destination or keyword">
+                <button class="search-btn">Search</button>
+                <button class="clear-btn">Clear</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">EXPLORE<br>DREAM<br>DESTINATION</h1>
+                <p class="hero-description">
+                    It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
+                </p>
+                <button class="book-now-btn">Book Now</button>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://x.com" title="X"><img src="images/x.png"/></a>
+            <a href="https://www.facebook.com" title="Facebook"><img src="images/facebook.png"/></a>
+            <a href="https://www.instagram.com" title="Instagram"><img src="images/instagram.png"/></a>
+            <a href="https://www.youtube.com" title="YouTube"><img src="images/youtube.png"/></a>
+        </div>
+    </section>
+
+    <!-- HTML for Recommendations Container -->
+    <div id="recommendationsContainer" class="recommendations-container">
+        <button class="close-button" onclick="closeRecommendations()">&times;</button>
+        <div id="recommendationsContent"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
